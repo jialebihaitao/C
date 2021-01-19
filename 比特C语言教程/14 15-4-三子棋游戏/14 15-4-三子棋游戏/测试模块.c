@@ -1,8 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 //测试三子棋游戏
-#include<stdio.h>
+
 #include"game.h"
-#include"游戏模块.c"
+
 
 void menu()
 {
@@ -63,13 +63,12 @@ void test()
 	do
 	{
 		menu();
-
 		printf("请选择:>");
 		scanf("%d", &input);
 		switch (input)
 		{
 		case 1:
-			printf("三子棋\n");
+			game();
 			break;
 		case 0:
 			printf("退出游戏\n");

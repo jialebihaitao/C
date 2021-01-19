@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
+
 #include"game.h"
 
 void InitBoard(char board[ROW][COL], int row, int col)
@@ -106,13 +107,13 @@ void ComputerMove(char board[ROW][COL], int row, int col)
 }
 //返回1表示棋盘满了
 //返回0表示棋盘没满
-int IsFull()
+int IsFull(char board [ROW][COL],int row,int col)
 {
 	int i = 0;
 	int j = 0;
 	for (i = 0; i < row; i++)
 	{
-		for (j = 0; j>col; j++)
+		for (j = 0; j < col; j++)
 		{
 			if (board[i][j] == ' ')
 			{

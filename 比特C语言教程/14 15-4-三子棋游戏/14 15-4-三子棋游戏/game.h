@@ -14,3 +14,4 @@ void ComputerMove(char board[ROW][COL], int row, int col);
 //Æ½¾Ö     'Q'
 //¼ÌÐø     'C'
 char Iswin(char board[ROW][COL], int row, int col);
+
