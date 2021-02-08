@@ -5,11 +5,14 @@
 #include<stdlib.h>
 int main()
 {
-	char arr1[] = "!!!!!张凯齐是大美女!!!!!!";
+	char arr1[] = "!!!!!王贺林是大傻逼!!!!!!";
 	char arr2[] = "#########################";
+	int i=0;
 	int left = 0;
 	//int right=sizeof(arr1)/sizeof(arr1[0])-2;//最右面是\0,所以需要减去2
 	int right = strlen(arr1) - 1;
+	for(i=0;i<10;i++)
+	{
 	while (left <= right)
 	{
 		arr2[left] = arr1[left];
@@ -24,5 +27,6 @@ int main()
 		right--;
 	}
 	printf("%s\n", arr2);
+	}
 	return 0;
 }
