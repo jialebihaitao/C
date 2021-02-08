@@ -31,7 +31,7 @@ int main()
 	int k = 7;//需要找的元素
 	int left = 0;//左下标
 	int right = sz - 1;//右下标:元素个数-1
-	while (left <= right)//判断条件:左<右
+	while (left <= right)//判断条件:左<=右
 	{
 		int mid = (left + right) / 2;//中间元素下标:左右下标除二
 		if (arr[mid]>k)

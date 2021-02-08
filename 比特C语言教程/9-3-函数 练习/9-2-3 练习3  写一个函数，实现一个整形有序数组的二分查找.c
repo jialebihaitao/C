@@ -33,7 +33,7 @@ int main()
 {
 	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	int k = 7;//待查找元素
-	int sz = sizeof(arr) / sizeof(arr[0]);//求最后一个元素下标
+	int sz = sizeof(arr) / sizeof(arr[0]);//求数组元素个数
 	int ret = binary_search(arr, k, sz);
 	//传递的是数组第一个元素
 	if (ret == -1)
